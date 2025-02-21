@@ -1,4 +1,4 @@
-/*Diseñar un programa que me solicite ingresar n cantidad de números por teclado,
+/* 2.Diseñar un programa que me solicite ingresar n cantidad de números por teclado,
 luego de ingresar los números el programa me debe solicitar que operación deseo
 realizar:
 a. Sumar los números
@@ -57,11 +57,13 @@ const PromedioPares = (numeros) => {
   pares = pares / numeros.length;
   return pares;
 };
-const operaciones = () =>
+
+
+
+const operaciones = (cantidad) =>
 {
   let cont = 0;
   let numeros = []
-  let cantidad = parseInt(prompt("Ingrese la cantidad de numeros a ingresar"))
   for (let x = 0; x < cantidad; x++)
   {
     numeros[x] = parseInt(prompt(`Ingrese numero #${x+1}`));
@@ -107,4 +109,5 @@ const operaciones = () =>
     }
   }
 }
-operaciones();
+let cantidad = parseInt(prompt("Ingrese la cantidad de numeros a ingresar"));
+operaciones(cantidad);
