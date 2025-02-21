@@ -14,7 +14,7 @@ Para este ejercicio se solicita trabajar con módulos, expresiones regulares y
 condicionales. Si está permitido solicitar al operador el tipo de su tarjeta de
 crédito.*/
 
-export const banco = () => {
+const banco = () => {
   let Negativos = /^-\d+$/;
   let tarj;
   let cont = 0;
@@ -48,3 +48,4 @@ export const banco = () => {
     }
   }
 };
+banco();
